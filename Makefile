@@ -1,3 +1,3 @@
 
 test:
-	cd examples/ ; for f in *.tex; do xelatex $$f; done
+	cd mycv/ ; for f in *.tex; do xelatex $$f; done
