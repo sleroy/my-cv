@@ -1,5 +1,9 @@
 
 test:
+	rm mycv/*.aux -f
+	rm mycv/*.log -f
+	rm mycv/*.out -f
+	rm mycv/*.aux -f
 	cd mycv/ ; for f in *.tex; do xelatex $$f; done
 	cp mycv/resume.pdf resume_sylvain_leroy.pdf
 	cp mycv/coverletter.pdf coverletter_sylvain_leroy.pdf
