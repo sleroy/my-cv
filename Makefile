@@ -10,4 +10,5 @@ test:
 	cp mycv/cv.pdf cv_sylvain_leroy.pdf
 	cp mycv/cvfr.pdf cv_fr_sylvain_leroy.pdf
 	cp mycv/cvsqm.pdf cv_fr_sylvain_leroy_software_quality_manager.pdf
+	cp mycv/cvsqm.pdf cv_fr_sylvain_leroy_software_quality_manager2.pdf
 	rm mycv/*.pdf
