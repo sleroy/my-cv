@@ -48,11 +48,14 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
+\photo[rectangle,edge,right]{./profile.png}
 \name{Sylvain}{Leroy}
 \position{Software Modernization Architect, Senior Fullstack Developer}
 \address{Chemin de Bérée 16B, Lausanne, Switzerland}
@@ -86,6 +89,7 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+\input{cv/summary.tex}
 \input{cv/education.tex}
 \input{cv/skills.tex}
 \input{cv/experience.tex}
