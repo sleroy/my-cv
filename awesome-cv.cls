@@ -586,6 +586,22 @@
   \vspace{2mm}
 }
 
+% Define an environment for experiences
+\newcommand*{\experience}[3]{%
+  \vspace{0.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \entrypositionstyle{Context} \\
+    #1 \\
+    \entrypositionstyle{Achievements} \\
+    #2 \\
+    \entrypositionstyle{Technologies} \\
+    #3 \\    
+  \end{tabular*}%
+}
+
+
 % Define an environment for cventry
 \newenvironment{cventries}{%
   \vspace{\acvSectionContentTopSkip}
