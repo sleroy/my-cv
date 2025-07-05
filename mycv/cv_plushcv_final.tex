@@ -1,0 +1,300 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template - Final Version with Enhanced TOCEA Description
+% Adapted for Sylvain Leroy
+% Senior Cloud Solution Architect & Digital Transformation Leader
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt]{article}
+\usepackage[lmargin=0.7cm, vmargin=0.6cm, rmargin=0.7cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage[document]{ragged2e}
+\usepackage{paracol}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Color definitions
+\definecolor{date}{HTML}{666666}
+\definecolor{title}{HTML}{1D76E2}
+\definecolor{primary}{HTML}{2b2b2b}
+\definecolor{headings}{HTML}{6A6A6A}
+\definecolor{subheadings}{HTML}{333333}
+
+% Set fonts with fallback
+\setmainfont{Inter}[
+  Path = fonts/inter/,
+  Extension = .ttf,
+  UprightFont = *-Light,
+  BoldFont = *-SemiBold,
+  ItalicFont = *-Light
+]
+
+% Custom commands with improved spacing
+\newcommand{\sectionsep}{\vspace{1.5pt}}
+\newcommand{\subsectionsep}{\vspace{0.5pt}}
+\newcommand{\runsubsection}[1]{
+  \vspace{0.5pt}
+  \color{subheadings}\fontsize{10pt}{11.5pt}\selectfont\bfseries\uppercase{#1}\normalfont
+}
+\newcommand{\descript}[1]{
+  \color{subheadings}\fontsize{8pt}{9.5pt}\selectfont{#1}\normalfont\\[0.25pt]
+}
+\newcommand{\location}[1]{
+  \color{headings}\fontsize{7pt}{8.5pt}\selectfont{#1}\normalfont\\[0.25pt]
+}
+
+% Title formatting with better spacing
+\titleformat{\section}{\color{title}\fontsize{12.5pt}{14pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\titleformat{\subsection}{\color{subheadings}\fontsize{9pt}{10.5pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\titlespacing{\section}{0pt}{1.5pt}{0.5pt}
+\titlespacing{\subsection}{0pt}{0.5pt}{0.25pt}
+
+% Improved bullet environment with better spacing
+\newenvironment{tightemize}{
+\vspace{0pt}
+\begin{itemize}[
+  label=\textbullet,
+  leftmargin=9pt,
+  itemsep=0.25pt,
+  parsep=0pt,
+  topsep=0.25pt,
+  partopsep=0pt
+]
+}{\end{itemize}\vspace{0.25pt}}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+{\color{title}\fontsize{26pt}{30pt}\selectfont\bfseries SYLVAIN LEROY}\\[0.5pt]
+{\fontsize{9pt}{10.5pt}\selectfont Senior Cloud Solution Architect \& Digital Transformation Leader}\\[0.5pt]
+{\fontsize{7pt}{8pt}\selectfont 
+\href{https://sylvainleroy.com}{sylvainleroy.com} | 
+\href{https://www.github.com/sleroy0}{github.com/sleroy0} | 
+\href{https://www.linkedin.com/in/sylvain-leroy-byoskill}{linkedin.com/in/sylvain-leroy-byoskill} | 
+\href{mailto:job@sylvainleroy.com}{job@sylvainleroy.com} | 
++41 76 401 19 31}
+\end{center}
+
+\vspace{-0.5pt}
+\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0.5pt}}
+\vspace{-3pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN LAYOUT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\columnratio{0.68}
+\begin{paracol}{2}
+
+\switchcolumn[0]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFESSIONAL SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Summary}
+\textbf{Senior Cloud Solution Architect} with 17+ years delivering multi-cloud migration and modernization projects worth \$1M+ ARR across EMEA. \textbf{Achieved 8 cloud certifications} (6 AWS + 2 GCP) including Solutions Architect Professional and DevOps Professional. \textbf{Founded and scaled Tocea} (2010-2016), a technology company integrated into Metrixware group, serving major French banks and insurances with international expansion to North America. \textbf{Specialized in GCP-to-AWS migrations} for largest bank of Denmark, top Swiss Private Bank, and major UK FSI companies. \textbf{Operates byoskill.ch consultancy} providing software modernization, startup tech advisory, and digital agency services.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Amazon Web Services}
+\descript{| Specialist Solution Architect}
+\location{Jan 2023 – Present | Lausanne, Switzerland}
+\begin{tightemize}
+\item Won 3 migration projects worth \$1M+ ARR each through expert GCP-to-AWS migration strategies and TCO analysis
+\item Delivered cloud modernization for largest bank of Denmark, top Swiss Private Bank, and major UK FSI companies
+\item Achieved 6 AWS certifications in 12 months (SA Pro, DevOps Pro, Database Specialty) demonstrating rapid technical mastery
+\item Specialized in Gaming and Adtech modernization on AWS, driving digital transformation across entertainment sectors
+\item Managed DC Exit projects and organized hackathons for largest UK FSI companies, driving innovation and cloud adoption
+\item Recorded several technical videos for AWS, contributing to global knowledge sharing and best practices
+\end{tightemize}
+\sectionsep
+
+\runsubsection{byoskill.ch}
+\descript{| Founder \& Principal Consultant}
+\location{2017 – Present | Switzerland}
+\begin{tightemize}
+\item Founded sole ownership consultancy providing software modernization, startup tech advisory, and digital agency services
+\item Served as part-time CTO for multiple startups, providing strategic technology leadership and architecture guidance
+\item Delivered software modernization projects for enterprises migrating from legacy systems to modern cloud architectures
+\item Built digital agency services including online shops, mobile applications, and custom web solutions for SMEs
+\end{tightemize}
+\sectionsep
+
+\runsubsection{LzLabs GMBH}
+\descript{| Product Owner / Solution Architect}
+\location{Sep 2021 – Dec 2022 | Zurich, Switzerland}
+\begin{tightemize}
+\item Led product strategy for 3 mainframe modernization tools serving 60+ developers
+\item Guided 2 enterprise customers through complete COBOL/JCL mainframe migrations, saving \$2M+
+\item Built automated testing framework using ML for code analysis, reducing manual testing by 70\%
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Keyteo-Assura \& SALT SA}
+\descript{| Technical Leader / Solution Architect}
+\location{2020 – 2021 | Switzerland}
+\begin{tightemize}
+\item Led core ERP migration from AS400 to Adcubum Syrius for 100+ staff project
+\item Modernized payment system migrating 4 backends from Spring 2/Java 5 to Spring 5/Java 11
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Various Companies}
+\descript{| Senior Software Engineer / Technical Lead}
+\location{2016 – 2020 | Europe}
+\begin{tightemize}
+\item Led software development teams across finance, telecommunications, and e-commerce industries
+\item Architected enterprise applications serving millions of users with 99.9\% availability
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Tocea (Metrixware Group)}
+\descript{| Founder \& CTO}
+\location{2010 – 2016 | Rennes, France}
+\begin{tightemize}
+\item Founded and scaled technology company specializing in innovative software quality assessment and continuous improvement solutions
+\item Served major French clients in banking and insurance sectors, achieving significant market penetration and client success
+\item Led international expansion to North America (Quebec region), establishing strategic presence in Canadian banking/insurance market
+\item Developed cutting-edge software audit tools and quality assessment platforms, including free audit tools for code analysis
+\item Successfully integrated company into Metrixware group, demonstrating strong business development and strategic exit execution
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN TWO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\switchcolumn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Cloud Platforms}
+\subsectionsep
+\textbf{AWS (6 Certifications):}\\
+SA Pro \textbullet{} DevOps Pro \textbullet{} Database Specialty \textbullet{} SA Associate \textbullet{} Developer \textbullet{} SysOps \\
+\subsectionsep
+\textbf{Google Cloud (2 Certifications):}\\
+Professional DevOps Engineer \textbullet{} Associate Cloud Engineer \\
+\subsectionsep
+\textbf{Specializations:}\\
+GCP-to-AWS Migrations \textbullet{} Gaming \& Adtech Modernization \textbullet{} DC Exit Projects \\
+\sectionsep
+
+\subsection{Consultancy Services}
+\subsectionsep
+\textbf{Software Modernization:}\\
+Legacy Migration \textbullet{} Cloud Architecture \textbullet{} System Refactoring \\
+\subsectionsep
+\textbf{Startup Advisory:}\\
+Part-time CTO \textbullet{} Tech Strategy \textbullet{} Architecture Guidance \\
+\subsectionsep
+\textbf{Digital Agency:}\\
+Online Shops \textbullet{} Mobile Apps \textbullet{} Custom Web Solutions \\
+\sectionsep
+
+\subsection{Industry Expertise}
+\subsectionsep
+\textbf{Financial Services:}\\
+UK FSI \textbullet{} Danish Banking \textbullet{} Swiss Private Banking \textbullet{} French Banking \& Insurance \\
+\subsectionsep
+\textbf{Digital Industries:}\\
+Gaming \textbullet{} Adtech \textbullet{} Entertainment Platforms \\
+\sectionsep
+
+\subsection{Programming}
+\subsectionsep
+\textbf{Proficient:}\\
+Java 8/11+ \textbullet{} Python \textbullet{} TypeScript \textbullet{} JavaScript \\
+\subsectionsep
+\textbf{Legacy Systems:}\\
+COBOL \textbullet{} JCL \textbullet{} IBMi/RPG \\
+\sectionsep
+
+\subsection{Architecture}
+\subsectionsep
+Microservices \textbullet{} Event-Driven \textbullet{} Docker \textbullet{} Kubernetes \textbullet{} Terraform \textbullet{} CDK \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Rennes 1}
+\textbf{Master's in Performance \& Micro Architecture}\\
+2004-2007 | Rennes, France\\
+\sectionsep
+
+\subsection{University of Rennes 1}
+\textbf{Bachelor of Computer Sciences}\\
+2002-2004 | Rennes, France
+\sectionsep
+
+\subsection{INRIA/IRISA}
+\textbf{Research - Static Analysis \& Refactoring Tools}\\
+2007-2010 | Rennes, France\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+
+\subsection{AWS (2023)}
+\subsectionsep
+Solutions Architect Professional \\
+DevOps Professional \\
+Database Specialty \\
+Solutions Architect Associate \\
+Developer Associate \\
+SysOps Administrator \\
+\sectionsep
+
+\subsection{Additional}
+\subsectionsep
+GCP Professional DevOps Engineer \\
+GCP Associate Cloud Engineer \\
+MongoDB AWS Architect \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+
+\subsection{Innovation}
+\subsectionsep
+French Ministry of Industry - Créadev Finalist (2013) \\
+French Ministry of Industry - Emergence Finalist (2012) \\
+Phar Fund Laureate (2011) \\
+
+\end{paracol}
+\end{document}
